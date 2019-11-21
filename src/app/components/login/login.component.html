@@ -1,0 +1,28 @@
+<mat-card class="mat-elevation-z8 card-style" style="margin: 30px; width: 50%">
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-subtitle>Please type your credentials</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p align="center">
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="your@username.com" [(ngModel)]="username">
+        <mat-icon matPrefix>face</mat-icon>
+      </mat-form-field>
+    </p>
+    <p align="center">
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="***" [(ngModel)]="password" type="password">
+        <mat-icon matPrefix>fingerprint</mat-icon>
+      </mat-form-field>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <p align="center">
+      <button mat-raised-button color="accent" (click)="loginProc()">LOG IN</button>
+      <button mat-button>Forgot my password</button>
+    </p>
+  </mat-card-actions>
+</mat-card>

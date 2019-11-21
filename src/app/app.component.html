@@ -1,0 +1,2 @@
+<app-login *ngIf="loggedUser == null" (login)="login($event)"></app-login>
+<app-main *ngIf="loggedUser != null" (logout)="logout($event)"></app-main>

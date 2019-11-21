@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span><a href="#"><img src="assets/baby_64.png" class="logo" /></a></span>
+    <span><b>BBcam</b></span>
+    <span class="bb-spacer"></span>
+    <span>
+      <button mat-mini-fab aria-label="Login" (click)="logoutProc()">
+        <mat-icon>person</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-card class="mat-elevation-z8 card-style">
+  <mat-card-header>
+    <mat-card-title>Lovely cradle 💕</mat-card-title>
+    <mat-card-subtitle>Live stream</mat-card-subtitle>
+  </mat-card-header>
+  <img id="stream" style="width: 100%;" src="http://localhost:8081/?action=stream">
+  <mat-card-content>
+
+  </mat-card-content>
+</mat-card>
